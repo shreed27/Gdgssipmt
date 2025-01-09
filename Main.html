@@ -228,4 +228,66 @@
         </div>
     </section>
     
-    
+     <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="https://www.gstatic.com/devrel-devsite/prod/v84e6f6a61298bbae85dc5f51ee4b6c7dbb9a7781196bbc7d48e637a8daf8667f/developers/images/lockup-developers.svg" alt="GDSC Logo" class="h-8 mb-4">
+                    <p class="text-gray-400">Building developers and leaders of tomorrow.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Events</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Team</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blogs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Projects</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-icon text-gray-400 hover:text-white text-xl"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-icon text-gray-400 hover:text-white text-xl"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon text-gray-400 hover:text-white text-xl"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon text-gray-400 hover:text-white text-xl"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Google Developer Student Clubs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true
+            });
+
+            // Smooth scroll for navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Mobile menu functionality can be added here
+        });
+    </script>
+</body>
+</html>   
